@@ -1,4 +1,8 @@
-# vm-real-world-vue2
+[Vue Mastery Note Home](https://github.com/coolinmc6/front-end-dev/blob/master/vue/vue-mastery.md) | 
+[Vue Notes](https://github.com/coolinmc6/front-end-dev/tree/master/vue) | 
+[Front End Dev](https://github.com/coolinmc6/front-end-dev) |
+
+# Vue Mastery: Real World Vue 2
 
 Course notes for Vue Mastery's [Real World Vue 2](https://www.vuemastery.com/courses/real-world-vue-js/)
 
