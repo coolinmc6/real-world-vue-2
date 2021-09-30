@@ -100,6 +100,48 @@ if it gets a route, we can consider a "view". A "component" is also a Vue compon
 components that you use your views. Like custom buttons, links, whatever. Any components that your app 
 uses but do NOT are not actually a page, would go in the "components" folder.
 
+## 5. Dynamic Routing & History Mode
+
+- In the routes array, I can add my `user` route that is dynamic:
+
+```js
+const routes = [
+  {
+    path: '/user/:username',
+    name: 'user',
+    component: User,
+    props: true     // not required but makes parameters into props
+  }
+];
+```
+- and then I can display the username using the `$route` variable OR, if `props: true` is set in the route, 
+just use the param like any other variable:
+
+```vue
+<template>
+  <h1>{{ $route.params.username }}</h1>
+</template>
+```
+OR...
+```vue
+<template>
+  <h1>{{ username }}</h1>
+</template>
+<script>
+export default {
+  props: ['username']
+}
+</script>
+```
+- With History Mode turned on, we can eliminate the `#` in the URL.
+  - **Note:** to get this to work on a server, we need some server configuration.
+```js
+const router = new VueRouter({
+  mode: 'history',    // remove this to use the #
+  base: process.env.BASE_URL,
+  routes
+});
+```
 
 ### Commands and Vue CLI Info
 
