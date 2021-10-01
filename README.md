@@ -143,6 +143,17 @@ const router = new VueRouter({
 });
 ```
 
+## 7. Global Components
+- Here is the lesson: [https://www.vuemastery.com/courses/real-world-vue-js/global-components](https://www.vuemastery.com/courses/real-world-vue-js/global-components)
+- Registering a single component globally is pretty easy:
+
+```js
+import BaseIcon from ‘@/components/BaseIcon’;
+Vue.component('BaseIcon', BaseIcon)
+```
+- That's it. Where it is trickier is when you want to register many components. You can automatically 
+globally register all components as it shows in the [docs](https://vuejs.org/v2/guide/components-registration.html#Automatic-Global-Registration-of-Base-Components).
+
 ### Commands and Vue CLI Info
 
 - Project setup
