@@ -154,6 +154,7 @@ Vue.component('BaseIcon', BaseIcon)
 - That's it. Where it is trickier is when you want to register many components. You can automatically 
 globally register all components as it shows in the [docs](https://vuejs.org/v2/guide/components-registration.html#Automatic-Global-Registration-of-Base-Components).
 
+
 ### Commands and Vue CLI Info
 
 - Project setup
